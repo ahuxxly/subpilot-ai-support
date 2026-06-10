@@ -1,13 +1,22 @@
 # SubPilot AI Support Site
 
-This static site is a deployment-ready draft for the App Store Support URL and Privacy Policy URL.
+This static site is published as the App Store Support URL and Privacy Policy URL.
 
-Before publishing:
+Current public deployment:
 
-1. Configure the release contact values with `scripts/configure-release-contact.ps1`.
-2. Deploy the folder to a stable HTTPS host.
-3. Put the deployed support page URL in App Store Connect as Support URL.
-4. Put the deployed privacy page URL in App Store Connect as Privacy Policy URL.
+- Support URL: https://ahuxxly.github.io/subpilot-ai-support/
+- Privacy Policy URL: https://ahuxxly.github.io/subpilot-ai-support/privacy.html
+- Support form: https://github.com/ahuxxly/subpilot-ai-support/issues
+- Public support repository: https://github.com/ahuxxly/subpilot-ai-support
+
+The iOS source repository remains private. The support site is deployed from a separate public repository because the current GitHub plan does not support Pages for private repositories.
+
+Before App Store submission:
+
+1. Keep the support and privacy URLs stable.
+2. Put the deployed support page URL in App Store Connect as Support URL.
+3. Put the deployed privacy page URL in App Store Connect as Privacy Policy URL.
+4. Add a real App Review contact email with `scripts/configure-release-contact.ps1` or `fastlane/metadata/review_information/email_address.txt`.
 
 Configuration command from the repository root:
 
