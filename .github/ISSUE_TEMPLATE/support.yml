@@ -1,0 +1,59 @@
+name: SubPilot AI Support Request
+description: Ask for help with SubPilot AI.
+title: "[Support]: "
+labels:
+  - support
+body:
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Support topic
+      options:
+        - Subscription entry
+        - Cost totals
+        - Renewal reminders
+        - Receipt text parsing
+        - CSV export
+        - Privacy or data deletion
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: "1.0"
+    validations:
+      required: false
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version and device
+      placeholder: "iOS 18.5, iPhone 16 Pro"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include what you expected and what you saw instead.
+      placeholder: "Describe the issue or question."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: false
+  - type: checkboxes
+    id: follow-up
+    attributes:
+      label: Follow-up
+      options:
+        - label: I can provide more details if needed.
+          required: false

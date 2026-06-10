@@ -6,7 +6,7 @@ Current public deployment:
 
 - Support URL: https://ahuxxly.github.io/subpilot-ai-support/
 - Privacy Policy URL: https://ahuxxly.github.io/subpilot-ai-support/privacy.html
-- Support form: https://github.com/ahuxxly/subpilot-ai-support/issues
+- Support form: https://github.com/ahuxxly/subpilot-ai-support/issues/new?template=support.yml
 - Public support repository: https://github.com/ahuxxly/subpilot-ai-support
 
 The iOS source repository remains private. The support site is deployed from a separate public repository because the current GitHub plan does not support Pages for private repositories.
